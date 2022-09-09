@@ -12,6 +12,9 @@
   бота отвечать, в каком созвездии сегодня находится планета.
 
 """
+from cgitb import text
+import ephem
+
 import logging
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
@@ -37,9 +40,12 @@ def greet_user(update, context):
 
 
 def talk_to_me(update, context):
-    user_text = update.message.text
+    user_text = update.message.text.split()
     print(user_text)
-    update.message.reply_text(text)
+    update.message.reply_text(planet)
+    planet = ephem.constellation(user_text)
+    
+      
 
 
 def main():
@@ -51,6 +57,9 @@ def main():
 
     mybot.start_polling()
     mybot.idle()
+
+ 
+
 
 
 if __name__ == "__main__":
