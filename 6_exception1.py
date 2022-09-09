@@ -11,10 +11,15 @@
 """
 
 def hello_user():
-    """
-    Замените pass на ваш код
-    """
-    pass
+  while True:
+    try:
+      hello_user = input('Как дела?')
+      if hello_user == 'Хорошо':
+        break
+    except KeyboardInterrupt:
+      print('Пока!')
+      break
+   
     
 if __name__ == "__main__":
     hello_user()
