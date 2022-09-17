@@ -26,24 +26,24 @@ for phones_sum in phones:
   print(f' Cуммарное количество продаж для ', phones_sum['product'], sum(phones_sum['items_sold']))
 
 for phones_avg in phones:
-  product = phones_avg['product']
-  sum_phones = sum(phones_avg['items_sold'])
-  phones_avg = sum_phones/len(phones_avg['items_sold'])
-  print(f'Среднее количество продаж для ', product, phones_avg)
+    product = phones_avg['product']
+    sum_phones = sum(phones_avg['items_sold'])
+    phones_avg = sum_phones/len(phones_avg['items_sold'])
+    print(f'Среднее количество продаж для ', product, phones_avg)
 
 summ_all = 0
 for all_phones in phones:
-  product = all_phones['product']
-  sum_phones = sum(all_phones['items_sold'])
-  summ_all += sum_phones
-  print(f'Cуммарное количество продаж всех товаров', summ_all) 
+    product = all_phones['product']
+    sum_phones = sum(all_phones['items_sold'])
+    summ_all += sum_phones
+    print(f'Cуммарное количество продаж всех товаров', summ_all) 
 
 sum_all = 0
 for phones_avg in phones:
-  product = phones_avg['product']
-  sum_phones = sum(phones_avg['items_sold'])
-  phones_avg = sum_phones/len(phones_avg['items_sold'])
-  sum_all += phones_avg
-  print(f'Cреднее количество продаж всех товаров', sum_all)
+    product = phones_avg['product']
+    sum_phones = sum(phones_avg['items_sold'])
+    phones_avg = sum_phones/len(phones_avg['items_sold'])
+    sum_all += phones_avg
+    print(f'Cреднее количество продаж всех товаров', sum_all)
 
 
