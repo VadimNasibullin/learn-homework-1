@@ -23,16 +23,16 @@ questions_and_answers = {'Как дела?': 'Хорошо',
 
 def ask_user(answers_dict):
   while True:
-    ask_user = input('Введите вопрос: ')
-    print(answers_dict.get(ask_user))
+      ask_user = input('Введите вопрос: ')
+      print(answers_dict.get(ask_user))
     
 
 
 
-    """
-    Замените pass на ваш код
-    """
-    pass
+      """
+      Замените pass на ваш код
+      """
+      pass
     
 if __name__ == "__main__":
     ask_user(questions_and_answers)

@@ -23,7 +23,7 @@ phones =  [
   ]
 
 for phones_sum in phones:
-  print(f' Cуммарное количество продаж для ', phones_sum['product'], sum(phones_sum['items_sold']))
+    print(f' Cуммарное количество продаж для ', phones_sum['product'], sum(phones_sum['items_sold']))
 
 for phones_avg in phones:
     product = phones_avg['product']

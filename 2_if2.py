@@ -17,21 +17,21 @@
 
 def main(one_str, two_str):
   if type(one_str) != str or type(two_str) != str:
-    return 0
+      return 0
   elif str(one_str) == str(two_str):
-    return 1
+      return 1
   elif len(one_str) > len(two_str):
-    return 2
+      return 2
   elif str(two_str) == 'learn':
-    return 3    
+      return 3    
 
 
 
-    """
-    Эта функция вызывается автоматически при запуске скрипта в консоли
-    В ней надо заменить pass на ваш код
-    """
-    pass
+      """
+      Эта функция вызывается автоматически при запуске скрипта в консоли
+      В ней надо заменить pass на ваш код
+      """
+      pass
     
 if __name__ == "__main__":
   a = main('lear', 'learn')
